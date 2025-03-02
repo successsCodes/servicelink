@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <title>SERVICE-LINKS</title>
+    <style>
+
+
+
+               body {
+            font-family: 'Poppins', sans-serif;
+            background: #F4F6F9;
+            color: #222;
+            transition: 0.3s;
+        }
+
+        .dark-mode {
+            background: #181818;
+            color: #FFF;
+        }
+
+        
+
+        
+        
+        /* 🌟 Profile Header */
+        .profile-header {
+            position: relative;
+            height: 50px;
+            background: linear-gradient(135deg, #6C5CE7, #A29BFE);
+            border-radius: 0 0 15px 15px;
+        }
+
+        
+        /* 🌟 Buttons */
+        .btn-follow, .btn-dark-mode {
+            font-weight: bold;
+            border-radius: 20px;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: none;
+            transition: 0.3s;
+        }
+
+        .btn-follow {
+            background: #6C5CE7;
+            color: white;
+        }
+
+        .btn-follow:hover {
+            background: #5A4ECF;
+        }
+
+        .btn-dark-mode {
+            background: #FFD700;
+            color: #222;
+        }
+
+        .btn-dark-mode:hover {
+            background: #E0A800;
+        }
+
+        /* 🌟 Stats */
+        .stats-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            background: #FFFFFF;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .dark-mode .stats-container {
+            background: #222;
+            box-shadow: none;
+        }
+
+        .stat-box {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 22px;
+            font-weight: bold;
+            color: #6C5CE7;
+        }
+
+        .dark-mode .stat-number {
+            color: #FFD700;
+        }
+
+        /* 🌟 Service Feed */
+        .service-feed {
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .service-card {
+            background: #FFFFFF;
+            padding: 15px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 15px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .dark-mode .service-card {
+            background: #222;
+            border: 1px solid #555;
+        }
+
+        .service-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .service-actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .btn-like, .btn-comment {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn-like:hover {
+            color: red;
+        }
+
+        .btn-comment:hover {
+            color: #6C5CE7;
+        }
+
+        .profile-info img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 5px solid #6C5CE7;
+            margin-bottom: 10px;
+        }
+        .navbar-brand {
+            font-size: 32px;
+            font-weight: bold;
+            color: #4A47A3;
+            margin-left: 80px;
+        }
+
+        .navbar-brand span {
+            color: #FFC107;
+        }
+
+    </style>
+</head>
+<body>
+  
+<div class="profile-header">
+    <a class="navbar-brand" href="#">Service<span>Link</span></a>
+
+</div>
+
+
+<div class="profile-info container">
+    <img src="image/profile.jpg" alt="User Profile" class="profile-picture">
+
+    <h2 class="profile-name">Adebola Hamed</h2>
+    <p class="profile-bio">🚀 Passionate freelancer | Helping clients get the best services!</p>
+    <button class="btn-follow">Follow</button>
+    <button class="btn-dark-mode" onclick="toggleDarkMode()">🌙 Dark Mode</button>
+</div>
+
+
+<div class="container stats-container">
+    <div class="stat-box">
+        <p class="stat-number">1.2K</p>
+        <p>Followers</p>
+    </div>
+    <div class="stat-box">
+        <p class="stat-number">15</p>
+        <p>Services Completed</p>
+    </div>
+    <div class="stat-box">
+        <p class="stat-number">4.8⭐</p>
+        <p>Rating</p>
+    </div>
+</div>
+
+
+<!-- 🌟 Service Feed -->
+<div class="service-feed">
+    <h3 class="text-center">My Services</h3>
+
+    <div class="service-card">
+        <h5 class="service-title">Plumbing Service</h5>
+        <p>Completed a full bathroom plumbing installation for a client. 🚰✨</p>
+        <div class="service-actions">
+            <button class="btn-like">❤️ Like</button>
+            <button class="btn-comment">💬 Comment</button>
+        </div>
+    </div>
+
+    <div class="service-card">
+        <h5 class="service-title">Electric Repair</h5>
+        <p>Fixed electrical wiring issues and installed new lighting fixtures. 🔌💡</p>
+        <div class="service-actions">
+            <button class="btn-like">❤️ Like</button>
+            <button class="btn-comment">💬 Comment</button>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

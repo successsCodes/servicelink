@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <title>SERVICE-LINKS</title>
+    <style>
+           
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #4A47A3, #6A67CE);
+            color: #1C1C2D;
+        }
+
+        .signup-container {
+            max-width: 420px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: bold;
+            color: #4A47A3;
+            text-transform: uppercase;
+        }
+
+        .logo span {
+            color: #FFC107;
+        }
+
+        .signup-container h2 {
+            color: #4A47A3;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        /* Responsive Centering */
+        .full-screen {
+            min-height: 100vh;
+        }
+
+        .form-control {
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .btn-primary {
+            background-color: #FFC107;
+            border: none;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .btn-primary:hover {
+            background-color: #E0A800;
+        }
+
+        .terms {
+            font-size: 14px;
+            text-align: left;
+            margin-top: 10px;
+        }
+
+        .terms input {
+            margin-right: 5px;
+        }
+
+        .terms a {
+            color: #4A47A3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .login-link {
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        :root {
+            --primary-color: #4A47A3; /* Deep Purple */
+            --secondary-color: #FFC107; /* Golden Yellow */
+            --light-color: #F8F9FA;
+            --dark-color: #1C1C2D;
+        }
+
+        .login-link a {
+            color: #4A47A3;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .login-link a:hover {
+            text-decoration: underline;
+        }
+
+
+
+    </style>
+</head>
+<body>
+       
+    <div class="d-flex align-items-center justify-content-center full-screen">
+        <div class="signup-container">
+            <!-- Logo Text (Matching Homepage) -->
+            <div class="logo mb-3">Service<span>Link</span></div>
+            
+            <h2>Create an Account</h2>
+            <p class="text-muted">Join ServiceLink and connect with professionals!</p>
+            
+            <!-- Signup Form -->
+            <form method="POST" action="signup-process.php">
+                <div class="mb-3">
+                    <input type="text" class="form-control" name="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" name="password" placeholder="Password" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required>
+                </div>
+    
+            <!-- Terms & Conditions Checkbox -->
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the <a href="terms.html">Terms & Conditions</a></label>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 mt-3">Sign Up</button>
+        </form>
+
+        <!-- Login Redirect -->
+        <p class="login-link">Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+</div>
+
+    
+
+</body>
+</html>

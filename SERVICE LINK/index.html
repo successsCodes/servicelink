@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <title>SERVICE-LINKS</title>
+    <style>
+              
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #F8F9FA;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: white;
+            padding: 15px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4A47A3;
+        }
+
+        .navbar-brand span {
+            color: #FFC107;
+        }
+
+        .nav-link {
+            font-weight: bold;
+            color: #1C1C2D;
+        }
+
+        .nav-link:hover {
+            color: #FFC107;
+        }
+
+        .btn-auth {
+            background-color: #FFC107;
+            color: #1C1C2D;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 8px 15px;
+        }
+
+        .btn-auth:hover {
+            background-color: #E0A800;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: #4A47A3;
+            color: white;
+        }
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-bar input {
+    width: 70%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background: #FFC107;
+    color: #1C1C2D;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+        }
+
+        .services h2 {
+            color:#4A47A3;
+            font-weight: bold;
+        }
+
+        .service-item {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: 10px;
+        }
+
+        .service-item img {
+            width: 80px;
+            height: 80px;
+        }
+
+        /* Customer Reviews */
+        .reviews {
+            padding: 50px 20px;
+            background: #F8F9FA;
+            text-align: center;
+        }
+
+        .review-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 10px;
+        }
+
+        .review {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+            min-width: 250px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #4A47A3;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#">Service<span>Link</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="btn btn-auth" href="signup.html">Sign Up</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <h1>Find Trusted Service Providers Near You</h1>
+    <p>Connect with professionals for any service you need</p>
+    <div class="search-bar">
+        <input type="text" placeholder="Search for a service...">
+        <button>Search</button>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="image/service 1.jpg" alt="Service 1">
+                    <h4>  <a href="">Plumbing</a> </h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="image/service 2.jpg" alt="Service 2">
+                   <h4>  <a href="">Electrician</a> </h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="image/service 3.jpg" alt="Service 3">
+                  <h4>  <a href="">Carpentry</a> </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer Reviews -->
+<section class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review-container">
+        <div class="review">"Great service! Highly recommend!"</div>
+        <div class="review">"Very professional and on time!"</div>
+        <div class="review">"Affordable and reliable!"</div>
+    </div>
+</section>
+
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 ServiceLink. All rights reserved.</p>
+</div>
+
+</body>
+</html>
